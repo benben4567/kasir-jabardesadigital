@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/u1496946/kasir.jabardesadigital.com/
+    - export DEPLOYPATH=/home/u1496946/public_html/kasir.jabardesadigital.com/
     - /bin/cp -R * $DEPLOYPATH
