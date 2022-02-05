@@ -25,13 +25,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 
 //Setingan Database
-$config['database_host']	= 'localhost';
-$config['database_user']	= 'root';
-$config['database_pass'] 	= '';
-$config['database_name']	= 'depo_kasir';
-// $config['database_user']	= 'depotpan_desa_digital';
-// $config['database_pass'] 	= 'X$oT~mlcJ6GE';
-// $config['database_name']	= 'depotpan_pos1';
+$config['database_host']	= getenv('DB_HOST');
+$config['database_user']	= getenv('DB_USERNAME');
+$config['database_pass'] 	= getenv('DB_PASSWORD');
+$config['database_name']	= getenv('DB_DATABASE');
 
 //Setingan Base URL
 $config['base_url'] = ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == "on") ? "https" : "http");
@@ -61,7 +58,7 @@ $config['web_footer']		= $config['web_title']." &copy; 2021. Programmed & Design
 | variable so that it is blank.
 |
 */
-$config['index_page'] = 'index.php';
+$config['index_page'] = '';
 
 /*
 |--------------------------------------------------------------------------
