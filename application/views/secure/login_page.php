@@ -55,7 +55,7 @@
 
 <hr style='border-color:#999; border-style:dashed; '/>
 <div class='container'>
-<center>
+<center style="display: none;">
 LIST AKSES<br /><br />
 <div class='row'>
 <div class='col-sm-3'><b>Admin</b> <br />Username : admin<br />Password : admin</div>
